@@ -1,0 +1,22 @@
+module VOD {
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:VOD";
+    prefix "VOD";
+
+    revision "2015-01-05" {
+        description "Initial revision of VOD model";
+    }
+
+    rpc send-command {
+    	input {
+    		leaf operation {
+    			type string;
+    		}
+    	}
+    	output {
+    		leaf result {
+    			type string;
+    		}
+    	}
+    }
+}
